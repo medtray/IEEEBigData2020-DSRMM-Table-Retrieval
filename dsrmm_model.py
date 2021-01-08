@@ -9,7 +9,6 @@ import torch.nn.functional as F
 
 
 class DSRMM(nn.Module):
-    """Class that classifies question pair as duplicate or not."""
 
     def __init__(self, args):
         """"Constructor of the class."""

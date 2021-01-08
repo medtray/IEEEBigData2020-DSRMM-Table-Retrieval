@@ -9,7 +9,7 @@ import nltk
 import argparse
 
 parser = argparse.ArgumentParser(description='PreprocessWikiTables', formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-parser.add_argument('--tables_path', default='/home/mohamed/PycharmProjects/Data-Search-Project/tables_redi2_1')
+parser.add_argument('--tables_path', default='tables_redi2_1')
 parser.add_argument('--collection_path', default='wikiTables/features2.csv')
 parser.add_argument('--output_folder', default='wikiTables')
 parser.add_argument('--output_file', default='data_fields_with_struct_values2.json')

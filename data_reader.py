@@ -323,15 +323,9 @@ class DataAndQuery(Dataset):
 
 
     def __getitem__(self, t):
-        """
-            return: the t-th (center, context) word pair and their co-occurrence frequency.
-        """
-        ## Your codes go here
+        
         return self.all_desc[t],self.all_att[t],self.all_query[t],self.labels[t],self.all_semantic[t],self.all_values[t]
 
     def __len__(self):
-        """
-            return: the total number of (center, context) word pairs.
-        """
-        ## Your codes go here
+        
         return len(self.all_desc)

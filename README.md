@@ -1,6 +1,6 @@
 # IEEEBigData2020-DSRMM-Table-Retrieval
 
-This repository contains resources developed within the following paper: M. Trabelsi, Z. Chen, B. D. Davison and J. Heflin, "A Hybrid Deep Model for Learning to Rank Data Tables," 2020 IEEE International Conference on Big Data (Big Data).
+This repository contains resources developed within the following paper: M. Trabelsi, Z. Chen, B. D. Davison and J. Heflin, "A Hybrid Deep Model for Learning to Rank Data Tables", 2020 IEEE International Conference on Big Data (Big Data).
 
 # Requirements
 

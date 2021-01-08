@@ -13,11 +13,11 @@ This repository contains resources developed within the following paper: M. Trab
 
 # Data
 
-- WikiTables (http://websail-fe.cs.northwestern.edu/TabEL/)
+- WikiTables (http://websail-fe.cs.northwestern.edu/TabEL/tables.json.gz)
 
 # Citation
 
-@INPROCEEDINGS{9005681,
+@INPROCEEDINGS{dsrmm,
   author={M. {Trabelsi} and Z. {Chen} and B. D. {Davison} and J. {Heflin}},
   booktitle={2020 IEEE International Conference on Big Data (Big Data)}, 
   title={A Hybrid Deep Model for Learning to Rank Data Tables}, 

@@ -15,6 +15,14 @@ This repository contains resources developed within the following paper: M. Trab
 
 - WikiTables (http://websail-fe.cs.northwestern.edu/TabEL/tables.json.gz)
 
+# Table retrieval results
+
+- Run five fold cross validation on wikiTables without STR features:
+python3 train_test_dsrmm.py --max_query_len 6 --max_meta_len 50 --max_attributes_len 30 --max_values_len 20 --emsize 300 --k1 20 --k2 20 --k3 20 --k4 200 --sem_feature 100 --nbins 5 --device 0 --batch_size 5 --epochs 15 --data_path wikiTables --inter_folder inter_folder --values_file data_fields_with_struct_values2.json --use_max_ndcg --lr 0.001 --word_embedding glove.6B/glove.6B.300d.txt
+
+- Run five fold cross validation on wikiTables with STR features:
+python3 train_test_dsrmm.py --max_query_len 6 --max_meta_len 50 --max_attributes_len 30 --max_values_len 20 --emsize 300 --k1 20 --k2 20 --k3 20 --k4 200 --sem_feature 100 --nbins 5 --device 0 --batch_size 5 --epochs 15 --data_path wikiTables --inter_folder inter_folder --values_file data_fields_with_struct_values2.json --use_max_ndcg --lr 0.001 --word_embedding /home/mohamed/PycharmProjects/glove.6B/glove.6B.300d.txt --STR
+
 # Citation
 
 @INPROCEEDINGS{dsrmm,

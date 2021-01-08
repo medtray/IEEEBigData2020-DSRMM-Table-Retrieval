@@ -34,14 +34,14 @@ parser.add_argument('--nbins', type=int, default=5)
 #define training and testing parameters
 parser.add_argument('--device', type=int, default=0) #set to -1 for cpu
 parser.add_argument('--batch_size', type=int, default=5)
-parser.add_argument('--epochs', type=int, default=30)
+parser.add_argument('--epochs', type=int, default=15)
 parser.add_argument('--data_path', default='wikiTables')
 parser.add_argument('--inter_folder', default='inter_folder')
 parser.add_argument('--values_file', default='data_fields_with_struct_values2.json')
 parser.add_argument('--use_max_ndcg', type=bool, default=True)
 parser.add_argument('--lr', type=float, default=0.001)
 
-parser.add_argument('--word_embedding', default='/home/mohamed/PycharmProjects/glove.6B/glove.6B.300d.txt')
+parser.add_argument('--word_embedding', default='glove.6B/glove.6B.300d.txt')
 
 args = parser.parse_args()
 print(torch.cuda.current_device())
@@ -279,7 +279,7 @@ for _ in range(1):
                 max_test_mrr = test_mrr
 
             ndcg_test.append(test_ndcg)
-            print(test_ndcg)
+            #print(test_ndcg)
 
             loss_train.append(losslogger)
             loss_test.append(testing_loss)

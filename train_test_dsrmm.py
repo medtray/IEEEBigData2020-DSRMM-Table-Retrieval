@@ -132,7 +132,7 @@ def test_output(test_iter, model):
 loss_function=nn.MSELoss()
 
 
-batch_size=50
+batch_size=args.batch_size
 
 kfold = KFold(5, True, None)
 data=read_file_for_nfcg(os.path.join(args.data_path,"all.txt"))
